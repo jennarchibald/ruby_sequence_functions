@@ -30,19 +30,19 @@ def say_what_you_see(number)
     next_number = ""
     digits = array[counter].to_s.split()
 
-    digit_counter = 0
-
-    while digit_counter < digits.length
-      how_many = 1
-      if digits[digit_counter] == digits[digit_counter + 1]
-        how_many += 1
-      else
-        next_number << how_many.to_s
-        next_number << digits[digit_counter]
-      end
-
-      digit_counter += 1
-    end
+    # digit_counter = 0
+    #
+    # while digit_counter < digits.length
+    #   how_many = 1
+    #   if digits[digit_counter] == digits[digit_counter + 1]
+    #     how_many += 1
+    #   else
+    #     next_number << how_many.to_s
+    #     next_number << digits[digit_counter]
+    #   end
+    #
+    #   digit_counter += 1
+    # end
 
     counter += 1
     array << next_number.to_i
